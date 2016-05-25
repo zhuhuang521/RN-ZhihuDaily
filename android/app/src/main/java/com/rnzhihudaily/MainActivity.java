@@ -15,13 +15,23 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "RNZhihuDaily";
+        return "ZHHomePage";
+    }
+
+    @Override
+    protected String getJSMainModuleName() {
+        return "ZHHomePage";
+    }
+    @Override
+    protected String getJSBundleFile() {
+        return "ZHHomePage.js";
     }
 
     /**
      * Returns whether dev mode should be enabled.
      * This enables e.g. the dev menu.
      */
+
     @Override
     protected boolean getUseDeveloperSupport() {
         return BuildConfig.DEBUG;
